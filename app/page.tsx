@@ -1,74 +1,67 @@
 //import Image from "next/image";
 
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@radix-ui/react-accordion";
+
 export default function Home() {
-	return (
-		<div>
-			hhh
-			<button
-				id="dropdownDefaultButton"
-				data-dropdown-toggle="dropdown"
-				className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-				type="button"
-			>
-				Dropdown button{" "}
-				<svg
-					className="w-2.5 h-2.5 ms-3"
-					aria-hidden="true"
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 10 6"
-				>
-					<path
-						stroke="currentColor"
-						strokeLinecap="round"
-						strokeLinejoin="round"
-						strokeWidth="2"
-						d="m1 1 4 4 4-4"
-					/>
-				</svg>
-			</button>
-			<div
-				id="dropdown"
-				className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700"
-			>
-				<ul
-					className="py-2 text-sm text-gray-700 dark:text-gray-200"
-					aria-labelledby="dropdownDefaultButton"
-				>
-					<li>
-						<a
-							href="#"
-							className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-						>
-							Dashboard
-						</a>
-					</li>
-					<li>
-						<a
-							href="#"
-							className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-						>
-							Settings
-						</a>
-					</li>
-					<li>
-						<a
-							href="#"
-							className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-						>
-							Earnings
-						</a>
-					</li>
-					<li>
-						<a
-							href="#"
-							className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-						>
-							Sign out
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	);
+  return (
+    <div>
+      <Accordion
+        type="single"
+        collapsible
+        className="w-full"
+        defaultValue="item-1"
+      >
+        <AccordionItem value="item-1">
+          <AccordionTrigger className="bg-amber-300">
+            Product Information
+          </AccordionTrigger>
+          <AccordionContent className="flex flex-col gap-4 text-balance">
+            <p>
+              Our flagship product combines cutting-edge technology with sleek
+              design. Built with premium materials, it offers unparalleled
+              performance and reliability.
+            </p>
+            <p>
+              Key features include advanced processing capabilities, and an
+              intuitive user interface designed for both beginners and experts.
+            </p>
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-2">
+          <AccordionTrigger>Shipping Details</AccordionTrigger>
+          <AccordionContent className="flex flex-col gap-4 text-balance">
+            <p>
+              We offer worldwide shipping through trusted courier partners.
+              Standard delivery takes 3-5 business days, while express shipping
+              ensures delivery within 1-2 business days.
+            </p>
+            <p>
+              All orders are carefully packaged and fully insured. Track your
+              shipment in real-time through our dedicated tracking portal.
+            </p>
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-3">
+          <AccordionTrigger>Return Policy</AccordionTrigger>
+          <AccordionContent className="flex flex-col gap-4 text-balance">
+            <p>
+              We stand behind our products with a comprehensive 30-day return
+              policy. If you&apos;re not completely satisfied, simply return the
+              item in its original condition.
+            </p>
+            <p>
+              Our hassle-free return process includes free return shipping and
+              full refunds processed within 48 hours of receiving the returned
+              item.
+            </p>
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+    </div>
+  );
 }
