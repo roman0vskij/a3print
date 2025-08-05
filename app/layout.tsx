@@ -1,50 +1,26 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { bounded } from "@/fonts/fontBounded";
+import { montserrat } from "@/fonts/fontMontserrat";
 
 export const metadata: Metadata = {
-  title: "A3 ПРИНТ",
-  description: "Типография полного цикла в Алматы",
+	title: "A3 ПРИНТ",
+	description: "Типография полного цикла в Алматы",
 };
 
 export default async function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" className={bounded.variable}>
-      <body suppressHydrationWarning>
-        <p>Типография полного цикла в Алматы</p>
-        <p className="font-bounded font-thin">
-          Типография полного цикла в Алматы
-        </p>
-        <p className="font-bounded font-extralight">
-          Типография полного цикла в Алматы
-        </p>
-        <p className="font-bounded font-light">
-          Типография полного цикла в Алматы
-        </p>
-        <p className="font-bounded font-normal">
-          Типография полного цикла в Алматы
-        </p>
-        <p className="font-bounded font-medium">
-          Типография полного цикла в Алматы
-        </p>
-        <p className="font-bounded font-semibold">
-          Типография полного цикла в Алматы
-        </p>
-        <p className="font-bounded font-bold">
-          Типография полного цикла в Алматы
-        </p>
-        <p className="font-bounded font-extrabold">
-          Типография полного цикла в Алматы
-        </p>
-        <p className="font-bounded font-black">
-          Типография полного цикла в Алматы
-        </p>
-        {children}
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en" className={`${bounded.variable} ${montserrat.variable}`}>
+			<body suppressHydrationWarning>
+				<header className="w-full h-11  text-center font-montserrat text-base leading-[129%] tracking-[0.03em] font-medium">
+					+7 777 130 5838
+				</header>
+				{children}
+			</body>
+		</html>
+	);
 }
