@@ -17,7 +17,7 @@
 	--font-bounded: "var(--font-bounded)";
 	--font-montserrat: "var(--font-montserrat)";
 
-  --custom-border-width: 1px;
+	--custom-border-width: 1px;
 
 	--breakpoint-xs: 22.5rem;
 	/* --breakpoint-sm: rem;
@@ -151,3 +151,46 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+/* carousel */
+.embla__container {
+	touch-action: pan-y pinch-zoom;
+}
+.embla__slide {
+	transform: translate3d(0, 0, 0);
+}
+.embla__buttons {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.6rem;
+}
+.embla__button {
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	touch-action: manipulation;
+	text-decoration: none;
+	cursor: pointer;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	width: 3.6rem;
+	height: 3.6rem;
+	z-index: 1;
+	border-radius: 50%;
+	color: var(--font-secondary-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.embla__button:disabled {
+	color: var(--detail-high-contrast);
+}
+.embla__button__svg {
+	width: 35%;
+	height: 35%;
+}
+.embla__slide__number {
+	backface-visibility: hidden;
+}
+/* carousel */
