@@ -28,12 +28,17 @@
 @layer base {
 	body {
 		background: var(--background);
+		overflow-x: hidden;
 	}
 
 	* {
 		color: var(--font-primary-color);
 		font-family: var(--font-bounded), sans-serif;
 	}
+}
+
+:root:has(.no-doc-scroll) {
+	overflow: hidden;
 }
 
 @theme inline {
@@ -194,3 +199,6 @@
 	backface-visibility: hidden;
 }
 /* carousel */
+.form-shadow {
+	box-shadow: 0 8px 48px 0 rgba(45, 45, 63, 0.08);
+}

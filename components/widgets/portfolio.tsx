@@ -3,7 +3,7 @@ import { Title } from "../ui/title";
 
 export function Portfolio() {
 	return (
-		<div className="pt-10 pb-15">
+		<div id="portfolio" className="pt-10 pb-15">
 			<Title title="Портфолио" />
 
 			<p className="text-center text-xs font-medium leading-[140%] font-montserrat mt-2 px-7.5">

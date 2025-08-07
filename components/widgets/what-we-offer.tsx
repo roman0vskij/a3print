@@ -1,6 +1,6 @@
 export function WhatWeOffer() {
 	return (
-		<div className="mt-12 pt-10">
+		<div id="what-we-offer" className="mt-12 pt-10">
 			<h2 className="w-full h-full px-8.25 text-center text-[32px] font-medium leading-[122%]">
 				Что можно
 				<br />
