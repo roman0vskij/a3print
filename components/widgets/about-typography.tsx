@@ -3,7 +3,10 @@ import { Title } from "../ui/title";
 
 export function AboutTypography() {
 	return (
-		<div id="about-typography" className="flex flex-col items-center w-full pt-10 px-3.75 pb-9.5">
+		<div
+			id="about-typography"
+			className="flex flex-col items-center w-full pt-10 px-3.75 pb-9.5"
+		>
 			<Title title="О типографии" />
 
 			<p className="w-full max-w-[345px] mt-4 text-center text-xl leading-[129%]">
@@ -39,13 +42,7 @@ export function AboutTypography() {
 					</p>
 				</div>
 
-				<Image
-					src="/side-view-woman-with-color-palette.jpg"
-					alt="side-view-woman-with-color-palette"
-					width={345}
-					height={236}
-					className="rounded-md"
-				/>
+				<div className="rounded-md w-[345px] h-[236px] bg-[url(/side-view-woman-with-color-palette.jpg)] bg-bottom bg-cover" />
 
 				<div className="flex flex-col items-center">
 					<div className="relative w-12 h-9 flex items-end">

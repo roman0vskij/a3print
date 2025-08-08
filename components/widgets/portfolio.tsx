@@ -1,4 +1,4 @@
-import EmblaCarousel from "../ui/carousel";
+import EmblaCarousel from "../ui/portfolio-carousel/carousel";
 import { Title } from "../ui/title";
 
 export function Portfolio() {

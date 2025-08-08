@@ -49,7 +49,7 @@ export function Maps() {
 						/>
 					</div>
 					<div className="absolute top-9.25 left-[50%] translate-x-[-50%] rounded-full size-15 bg-(--primary-color) flex justify-center items-center text-[22px] leading-[125%] text-(--font-hover-color)">
-						4.7
+						4.8
 					</div>
 				</a>
 
