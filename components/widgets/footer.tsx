@@ -4,8 +4,25 @@ import { Logo } from "../ui/logo";
 export function Footer() {
 	return (
 		<footer className="flex flex-col items-center bg-(--footer-color) h-fit w-full">
-			<div>map</div>
+			{/* <Image
+				src="/maps/map.jpg"
+				alt="Карта"
+				width={985}
+				height={746}
+				className="absolute"
+			/> */}
 
+			{/* <a
+				className="w-fit h-10"
+				href="https://2gis.kz/almaty/firm/70000001021102210/76.919356%2C43.262951?m=76.922958%2C43.262189%2F15.15%2Fp%2F1.58%2Fr%2F0"
+				target="_blank"
+			> */}
+			<a
+				className="bg-[url(/maps/map.jpg)] h-62.5 w-full bg-center bg-no-repeat"
+				href="https://2gis.kz/almaty/firm/70000001021102210/76.919356%2C43.262951?m=76.922958%2C43.262189%2F15.15%2Fp%2F1.58%2Fr%2F0"
+				target="_blank"
+			/>
+			{/* </a> */}
 			<p className="pl-3.75 mt-4 text-white font-montserrat text-sm leading-[150%] opacity-70 w-full">
 				​Улица Макатаева, 131 к6​, 136 помещение
 			</p>

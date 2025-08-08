@@ -7,7 +7,7 @@ export function ContactForm() {
 		<form
 			action="POST"
 			onSubmit={onsubmit}
-			className="flex flex-col items-center bg-white rounded-md p-9 form-shadow w-full"
+			className="flex flex-col items-center bg-white rounded-md p-9 custom-shadow w-full"
 		>
 			<p className="text-center text-2xl leading-[129%] mb-7">
 				Заявка на звонок

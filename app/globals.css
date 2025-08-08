@@ -199,6 +199,9 @@
 	backface-visibility: hidden;
 }
 /* carousel */
-.form-shadow {
+.custom-shadow {
 	box-shadow: 0 8px 48px 0 rgba(45, 45, 63, 0.08);
+}
+.skip-ink {
+	text-decoration-skip-ink: none;
 }
