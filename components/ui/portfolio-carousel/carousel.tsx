@@ -78,6 +78,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 					const scale = numberWithinRange(tweenValue, 0, 1).toString();
 					const tweenNode = tweenNodes.current[slideIndex];
 					tweenNode.style.transform = `scale(${scale})`;
+					tweenNode.style.opacity = scale;
 				});
 			});
 		},
@@ -100,21 +101,24 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 	}, [emblaApi, tweenScale]);
 
 	return (
-		<div className="embla max-w-[375px] mx-auto">
-			<div className="embla__viewport overflow-hidden" ref={emblaRef}>
+		<div className="relative embla mx-auto">
+			<div
+				className="embla__viewport mx-auto max-w-[375px] md:max-w-[1128px] overflow-hidden"
+				ref={emblaRef}
+			>
 				<div className="embla__container flex">
 					{slides.map((img, index) => (
 						<div
-							className="embla__slide min-w-0 flex-[0_0_220px]"
+							className="embla__slide min-w-0 flex-[0_0_220px] md:flex-[0_0_33%]"
 							key={`slide${index}`}
 						>
-							<div className="embla__slide__number max-h-75 max-w-55 size-full">
+							<div className="embla__slide__number max-h-75 md:max-h-150 max-w-55 md:max-w-[432px] size-full">
 								<Image
 									src={img.src}
 									alt={img.alt}
 									width={1080}
 									height={1500}
-									className="max-h-75 max-w-55 size-full rounded-md"
+									className="max-h-75 md:max-h-150 max-w-55 md:max-w-[432px] size-full rounded-md"
 								/>
 							</div>
 						</div>
@@ -122,11 +126,17 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 				</div>
 			</div>
 
-			<div className="embla__controls hidden md:flex mt-4">
-				<div className="embla__buttons">
-					<PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-					<NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
-				</div>
+			<div className="absolute hidden lg:flex justify-between left-[50%] top-[50%] translate-[-50%] w-full max-w-[1280px] px-5">
+				<PrevButton
+					className="touch-manipulation bg-(--primary-color)/40 size-20 flex justify-center items-center rounded-full"
+					onClick={onPrevButtonClick}
+					disabled={prevBtnDisabled}
+				/>
+				<NextButton
+					className="touch-manipulation bg-(--primary-color)/40 size-20 flex justify-center items-center rounded-full"
+					onClick={onNextButtonClick}
+					disabled={nextBtnDisabled}
+				/>
 			</div>
 		</div>
 	);

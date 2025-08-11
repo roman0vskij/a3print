@@ -55,7 +55,7 @@ export function FAQAccordion() {
 		<Accordion
 			type="single"
 			collapsible
-			className="max-w-[345px] w-full flex flex-col gap-3 items-center"
+			className="max-w-[345px] md:w-250 w-full flex flex-col md:flex-row md:flex-wrap gap-3 items-center mx-auto"
 		>
 			{items.map(({ title, content, subcontent }, index) => (
 				<AccordionItem

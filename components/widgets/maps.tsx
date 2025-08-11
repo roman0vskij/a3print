@@ -14,7 +14,7 @@ export function Maps() {
         обратиться один раз — и вы не захотите менять подрядчика
       </p>
 
-      <div className="flex justify-center flex-wrap gap-x-10 lg:gap-x-25 xl:gap-x-36 gap-y-20.75 md:gap-y-43.75 max-w-[345px] lg:max-w-[1048px] lg:order-1">
+      <div className="flex justify-center flex-wrap gap-x-10 lg:gap-x-25 xl:gap-x-36 gap-y-20.75 lg:gap-y-43.75 max-w-[345px] lg:max-w-[1048px] lg:order-1">
         <a
           className="relative lg:order-2"
           href="https://yandex.by/maps/162/almaty/?ll=76.920440%2C43.261746&mode=poi&poi%5Bpoint%5D=76.919400%2C43.262960&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D179660209055&z=17.2"
