@@ -7,7 +7,7 @@ type TProps = {
 export function Logo({ className }: TProps) {
 	return (
 		<div
-			className={`flex flex-col items-end justify-end bg-(--primary-color) w-11.25 lg:w-21 h-14 lg:h-26.25 ${className}`}
+			className={`flex flex-col items-end justify-end bg-(--primary-color) min-w-11 w-11.25 lg:w-21 lg:min-w-21 h-14 lg:h-26.25 ${className}`}
 		>
 			<Image
 				src="/logo/A3.svg"

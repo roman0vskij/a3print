@@ -101,7 +101,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 	}, [emblaApi, tweenScale]);
 
 	return (
-		<div className="relative embla mx-auto">
+		<div className="relative embla mx-auto max-w-[1440px]">
 			<div
 				className="embla__viewport mx-auto max-w-[375px] md:max-w-[1128px] overflow-hidden"
 				ref={emblaRef}
@@ -126,19 +126,19 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 				</div>
 			</div>
 
-			<div className="absolute hidden lg:flex justify-between left-[50%] top-[50%] translate-[-50%] w-full max-w-[1280px] px-5">
+			{/* <div className="absolute  lg:flex justify-between left-[50%] px-5"> */}
 				<PrevButton
-					className="touch-manipulation bg-(--primary-color)/40 size-20 flex justify-center items-center rounded-full"
+					className="hover:drop-shadow-md absolute max-lg:hidden top-[50%] translate-y-[-50%] lg:left-5 xl:left-25 touch-manipulation bg-(--primary-color)/40 size-20 flex justify-center items-center rounded-full"
 					onClick={onPrevButtonClick}
 					disabled={prevBtnDisabled}
 				/>
 				<NextButton
-					className="touch-manipulation bg-(--primary-color)/40 size-20 flex justify-center items-center rounded-full"
+					className="hover:drop-shadow-md absolute max-lg:hidden top-[50%] translate-y-[-50%] lg:right-5 xl:right-25 touch-manipulation bg-(--primary-color)/40 size-20 flex justify-center items-center rounded-full"
 					onClick={onNextButtonClick}
 					disabled={nextBtnDisabled}
 				/>
 			</div>
-		</div>
+		// </div>
 	);
 };
 

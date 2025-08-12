@@ -1,18 +1,56 @@
-import { SwiperCarousel } from "../ui/swiper";
+import { ReviewsCarousel } from "../ui/reviews-carousel/carousel";
 import { Title } from "../ui/title";
-import EmblaCarousel from "@/components/ui/reviews-carousel/carousel";
 
 export function Reviews() {
-	const SLIDE_COUNT = 9;
-	const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+	const reviews = [
+		{
+			name: "Мария",
+			review:
+				"Очень довольны сотрудничеством с этой типографией! Печать четкая, цвета насыщенные, сроки строго соблюдены. Будем обращаться еще!",
+			rating: "5.0",
+		},
+		{
+			name: "Мария",
+			review:
+				"Очень довольны сотрудничеством с этой типографией! Печать четкая, цвета насыщенные, сроки строго соблюдены. Будем обращаться еще! Очень довольны сотрудничеством с этой типографией! Печать четкая, цвета насыщенные, сроки строго соблюдены. Будем обращаться еще!",
+			rating: "5.0",
+		},
+		{
+			name: "Мария",
+			review:
+				"Очень довольны сотрудничеством с этой типографией! Печать четкая, цвета насыщенные, сроки строго соблюдены. Будем обращаться еще!",
+			rating: "5.0",
+		},
+		{
+			name: "Мария",
+			review:
+				"Очень довольны сотрудничеством с этой типографией! Печать четкая, цвета насыщенные, сроки строго соблюдены. Будем обращаться еще!",
+			rating: "5.0",
+		},
+		{
+			name: "Мария",
+			review:
+				"Очень довольны сотрудничеством с этой типографией! Печать четкая, цвета насыщенные, сроки строго соблюдены. Будем обращаться еще!",
+			rating: "5.0",
+		},
+		{
+			name: "Мария",
+			review:
+				"Очень довольны сотрудничеством с этой типографией! Печать четкая, цвета насыщенные, сроки строго соблюдены. Будем обращаться еще!",
+			rating: "5.0",
+		},
+		{
+			name: "Мария",
+			review:
+				"Очень довольны сотрудничеством с этой типографией! Печать четкая, цвета насыщенные, сроки строго соблюдены. Будем обращаться еще!",
+			rating: "5.0",
+		},
+	];
 
 	return (
-		<div className="flex flex-col items-center pt-10 md:py-15 lg:py-20 pb-17.75 w-full">
+		<div className="relative flex flex-col items-center pt-10 md:py-15 lg:py-20 pb-17.75 w-full">
 			<Title title="Отзывы" />
-			{/* <EmblaCarousel slides={SLIDES} />
-      <div className="max-w-100">
-        <SwiperCarousel />
-      </div> */}
+			<ReviewsCarousel reviews={reviews} />
 		</div>
 	);
 }

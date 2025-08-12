@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Button() {
 	return (
-		<button className="bg-(--primary-color) rounded-[4px] py-4 px-7 w-50 h-12 lg:h-13 font-montserrat font-semibold text-base leading-[125%] text-(--font-hover-color) flex justify-center items-center tracking-[-0.01em]">
+		<button className="hover:drop-shadow-md max-lg:hover:drop-shadow-sm bg-(--primary-color) rounded-[4px] py-4 px-7 w-50 h-12 lg:h-13 font-montserrat font-semibold text-base leading-[125%] text-(--font-hover-color) flex justify-center items-center tracking-[-0.01em]">
 			Скачать
 		</button>
 	);

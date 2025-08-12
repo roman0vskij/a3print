@@ -41,9 +41,9 @@ function AccordionTrigger({
 				{...props}
 			>
 				{children}
-				<div className="flex justify-center items-center bg-(--primary-color) rounded-[4px] min-w-9 min-h-9 size-9 transition-colors duration-200">
-					<Plus className="first size-6" color="#2d1c15" />
-					<X className="hidden second size-5" color="#fff" />
+				<div className="hover:drop-shadow-md max-lg:hover:drop-shadow-sm flex justify-center items-center bg-(--primary-color) rounded-[4px] min-w-9 lg:min-w-12 min-h-9 lg:min-h-12 size-9 lg:size-12 transition-colors duration-200">
+					<Plus className="first size-6 lg:size-7" color="#2d1c15" />
+					<X className="hidden second size-5 lg:size-6" color="#fff" />
 				</div>
 			</AccordionPrimitive.Trigger>
 		</AccordionPrimitive.Header>
@@ -61,7 +61,7 @@ function AccordionContent({
 			className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden"
 			{...props}
 		>
-			<div className={cn("pt-4", className)}>{children}</div>
+			<div className={cn("pt-4 lg:pt-6 lg:pr-12.5", className)}>{children}</div>
 		</AccordionPrimitive.Content>
 	);
 }

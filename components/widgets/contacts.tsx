@@ -15,7 +15,7 @@ export function Contacts() {
 					</span>
 				</h3>
 
-				<div className="flex justify-between lg:flex-col lg:gap-6 mt-12 mb-8 w-full max-w-[345px] md:max-w-110 lg:max-w-122">
+				<div className="flex justify-between lg:flex-col lg:gap-6 mt-12 mb-8 lg:mb-0 w-full max-w-[345px] md:max-w-110 lg:max-w-122">
 					<div className="flex flex-col lg:flex-row items-center gap-4">
 						<div className="size-10 md:size-12 rounded-sm bg-(--primary-color) flex justify-center items-center">
 							<Image

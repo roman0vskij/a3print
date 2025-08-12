@@ -11,7 +11,7 @@ export function TypographyFullCycle() {
         Печать визиток, баннеров, календарей и другой полиграфической продукции
         с доставкой по Алматы и Казахстану
       </p>
-      <button className="flex justify-center items-center bg-(--primary-color) rounded-sm mx-auto mt-9 lg:mt-8 px-5 py-4 h-12 lg:h-13 w-65 lg:w-72.5 font-montserrat font-semibold text-base leading-[125%] tracking-[-0.01em] text-(--font-secondary-color)">
+      <button className="hover:drop-shadow-md max-lg:hover:drop-shadow-sm flex justify-center items-center bg-(--primary-color) rounded-sm mx-auto mt-9 lg:mt-8 px-5 py-4 h-12 lg:h-13 w-65 lg:w-72.5 font-montserrat font-semibold text-base leading-[125%] tracking-[-0.01em] text-(--font-secondary-color)">
         Заказать печать сейчас
       </button>
 

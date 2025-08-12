@@ -1,22 +1,33 @@
-import { Avatar, AvatarFallback } from "@radix-ui/react-avatar";
 import {
 	DropdownMenu,
 	DropdownMenuTrigger,
 	DropdownMenuContent,
-	DropdownMenuLabel,
 	DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
-import { ChevronsUpDown, Check } from "lucide-react";
+import { ChevronDown, Check } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 
 const languages = [
 	{
 		id: 1,
 		name: "RU",
+		img: {
+			src: "/flags/ru.svg",
+			alt: "ru",
+			width: 28,
+			height: 28,
+		},
 	},
 	{
 		id: 2,
 		name: "KZ",
+		img: {
+			src: "/flags/kz.svg",
+			alt: "kz",
+			width: 28,
+			height: 28,
+		},
 	},
 ];
 
@@ -24,32 +35,31 @@ export function LanguageSwitcher() {
 	const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
 	return (
 		<DropdownMenu>
-			<DropdownMenuTrigger className="flex items-center gap-2 bg-accent py-2.5 px-3 rounded-lg mx-auto">
-				<Avatar className="rounded-lg h-8 w-8">
-					<AvatarFallback className="rounded-lg bg-primary text-primary-foreground">
-						{selectedLanguage.name[0]}
-					</AvatarFallback>
-				</Avatar>
+			<DropdownMenuTrigger className="flex items-center lg:mb-4">
+				<Image
+					src={selectedLanguage.img.src}
+					alt={selectedLanguage.img.alt}
+					width={selectedLanguage.img.width}
+					height={selectedLanguage.img.height}
+					className="mr-2"
+				/>
 				<div className="text-start flex flex-col gap-1 leading-none">
-					<span className="text-sm leading-none font-semibold truncate max-w-[17ch]">
+					<span className="text-base leading-[140%] font-semibold font-montserrat w-6.25">
 						{selectedLanguage.name}
 					</span>
 				</div>
-				<ChevronsUpDown className="ml-6 h-4 w-4 text-muted-foreground" />
+				<ChevronDown className="ml-4 lg:ml-5 size-6" />
 			</DropdownMenuTrigger>
-			<DropdownMenuContent className="w-52" align="start">
-				<DropdownMenuLabel>Workspaces</DropdownMenuLabel>
+			<DropdownMenuContent
+				className="w-full max-w-25 lg:max-w-26.25"
+				align="start"
+			>
 				{languages.map((language) => (
 					<DropdownMenuItem
 						key={language.id}
 						onClick={() => setSelectedLanguage(language)}
 					>
-						<div className="flex items-center gap-2">
-							<Avatar className="rounded-md h-8 w-8">
-								<AvatarFallback className="rounded-md bg-primary/10 text-foreground">
-									{language.name[0]}
-								</AvatarFallback>
-							</Avatar>
+						<div className="flex items-center">
 							<div className="flex flex-col">
 								<span>{language.name}</span>
 							</div>
