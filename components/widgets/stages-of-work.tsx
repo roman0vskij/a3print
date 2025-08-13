@@ -120,11 +120,13 @@ export function StagesOfWork() {
 			className="relative flex flex-col items-center px-3.75 py-10 lg:pb-9.25 md:w-full max-w-[1440px]"
 		>
 			<Title title="Этапы работ" />
+
 			<p className="w-70 md:w-full mt-3 text-center text-[15px] md:text-xl lg:text-[28px] leading-[140%]">
 				<span className="text-(--font-blue-color)">6 шагов</span> — от заявки
 				<br className="lg:hidden" /> до готового результата
 			</p>
-			<div className="flex flex-col md:flex-row md:flex-wrap items-center md:items-start mt-12 gap-7 lg:gap-x-20 lg:gap-y-10 md:justify-center">
+
+			<div className="max-md:max-w-[345px] flex flex-col md:flex-row md:flex-wrap items-center md:items-start mt-12 gap-7 lg:gap-x-20 lg:gap-y-10 md:justify-center">
 				<StageOfWork props={stages[0]} i={0} key={`stage1`}>
 					<p className="md:text-center font-medium text-[11px] md:text-xs lg:text-base leading-[150%] font-montserrat opacity-80 whitespace-pre-line">
 						Оставьте заявку онлайн или позвоните — менеджер уточнит детали и
