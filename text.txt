@@ -1,0 +1,21 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBoDfXNiB5CbNR1qpUPnmR5f3YbML71zys",
+  authDomain: "a3print-76008.firebaseapp.com",
+  projectId: "a3print-76008",
+  storageBucket: "a3print-76008.firebasestorage.app",
+  messagingSenderId: "524073738938",
+  appId: "1:524073738938:web:49989177f81ea8d2d1d883"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+
+carfan363@gmail.com
+123456

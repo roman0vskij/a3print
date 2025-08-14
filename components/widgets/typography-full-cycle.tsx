@@ -3,7 +3,7 @@ import Image from "next/image";
 export function TypographyFullCycle() {
   return (
     <div className="relative overflow-x-hidden w-full">
-      <h1 className="w-full h-full mt-28 max-w-100 md:max-w-115 lg:max-w-145 xl:max-w-165 mx-auto text-center text-4xl md:text-5xl lg:text-6xl xl:text-[70px] font-medium leading-[122%] lg:leading-[129%]">
+      <h1 className="w-full h-full mt-28 lg:mt-35.5 max-w-100 md:max-w-115 lg:max-w-145 xl:max-w-165 mx-auto text-center text-4xl md:text-5xl lg:text-6xl xl:text-[70px] font-medium leading-[122%] lg:leading-[129%]">
         Типография полного цикла
         <br />в Алматы
       </h1>

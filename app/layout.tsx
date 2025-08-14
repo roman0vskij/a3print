@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { bounded } from "@/fonts/fontBounded";
 import { montserrat } from "@/fonts/fontMontserrat";
-import { Header } from "@/components/widgets/header";
-import { Footer } from "@/components/widgets/footer";
 
 export const metadata: Metadata = {
 	title: "A3 ПРИНТ",
@@ -17,11 +15,7 @@ export default async function RootLayout({
 }>) {
 	return (
 		<html lang="en" className={`${bounded.variable} ${montserrat.variable}`}>
-			<body suppressHydrationWarning>
-				<Header />
-				{children}
-				<Footer />
-			</body>
+			<body suppressHydrationWarning>{children}</body>
 		</html>
 	);
 }

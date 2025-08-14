@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import { Logo } from "../ui/logo";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "@/lib/firebaseClient";
 
 type TProps = {
 	children: React.ReactNode;
@@ -15,8 +19,20 @@ function Text({ children }: TProps) {
 }
 
 export function Footer() {
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	const [items, setItems] = useState<any[]>([]);
+
+	useEffect(() => {
+		loadItems();
+	}, []);
+
+	async function loadItems() {
+		const snap = await getDocs(collection(db, "items"));
+		setItems(snap.docs.map((d) => ({ id: d.id, ...d.data() })).reverse());
+	}
+
 	return (
-		<footer className="bg-(--footer-color)">
+		<footer className="bg-(--footer-color) w-full">
 			<div className="mx-auto relative flex flex-col items-center h-fit w-full max-w-[1440px]">
 				<a
 					className="bg-[url(/maps/map.png)] h-62.5 w-full md:absolute md:right-10 md:top-10 lg:top-auto lg:bottom-12.5 md:size-[25vw] xl:size-112.5 md:rounded-[12px] bg-center bg-no-repeat"
@@ -110,10 +126,19 @@ export function Footer() {
 								<Text> Выходной</Text>
 							</div>
 
-							<div className="flex gap-12.5">
-								<Text> 30.12 - 01.01</Text>
-								<Text> Выходной</Text>
-							</div>
+							{items.map((it) => (
+								<div key={`date${it.id}`} className="flex gap-12.5">
+									{it.to ? (
+										<Text>
+											{it.from} — {it.to}
+										</Text>
+									) : (
+										<Text>{it.from}</Text>
+									)}
+
+									<Text>{it.title}</Text>
+								</div>
+							))}
 						</div>
 
 						<p className="hidden md:block text-white font-montserrat text-sm lg:text-base leading-[150%] w-full lg:mt-1">
