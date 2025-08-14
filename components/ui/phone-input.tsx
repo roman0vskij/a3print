@@ -47,6 +47,7 @@ export function PhoneInput() {
 		<div className="relative w-full">
 			<input
 				type="tel"
+				name="phone"
 				value={phoneNumber}
 				onChange={handleInputChange}
 				placeholder="701 111-11-11"

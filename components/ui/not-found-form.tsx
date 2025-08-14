@@ -2,29 +2,48 @@
 
 import { FormEvent } from "react";
 import { PhoneInput } from "./phone-input";
+import { X } from "lucide-react";
 
-export function ContactForm({ key }: { key: string }) {
+type TProps = {
+	close: () => void;
+};
+
+export function NotFoundForm({ close }: TProps) {
 	function onsubmit(e: FormEvent<HTMLFormElement>) {
 		e.preventDefault();
 		console.log(e);
+		close();
 	}
 
 	return (
 		<form
-			key={key}
+			onClick={(e) => e.stopPropagation()}
 			onSubmit={(e) => onsubmit(e)}
-			className="flex flex-col items-center lg:items-start bg-white rounded-md p-9 custom-shadow w-full max-w-[548px]"
+			className="flex flex-col items-center bg-white rounded-md p-9 w-full max-w-[548px]"
 		>
-			<p className="mb-7 text-center text-2xl lg:text-[28px] leading-[129%]">
-				Заявка на звонок
-			</p>
+			<div className="flex w-full items-center mb-7">
+				<p className="text-center text-2xl lg:text-[28px] leading-[129%] w-full ml-2 px-2">
+					Заявка на звонок
+				</p>
+				<button
+					type="reset"
+					onClick={(e) => {
+						e.stopPropagation();
+						close();
+					}}
+				>
+					<X className="shrink-0 grow-0" />
+				</button>
+			</div>
 			<input
+				name="name"
 				className="mb-4 lg:mb-5 border border-[#e0e0e0] py-2.5 px-4 w-full h-11 rounded-sm font-montserrat font-medium text-base leading-[150%] placeholder:opacity-40 placeholder:text-[#272835]"
 				placeholder="Имя"
 			/>
 			<input
+				name="offer"
 				className="mb-4 lg:mb-5 border border-[#e0e0e0] py-2.5 px-4 w-full h-11 rounded-sm font-montserrat font-medium text-base leading-[150%] placeholder:opacity-40 placeholder:text-[#272835]"
-				placeholder="Услуга"
+				placeholder="Услуга/Вопрос"
 			/>
 			<PhoneInput />
 			<button

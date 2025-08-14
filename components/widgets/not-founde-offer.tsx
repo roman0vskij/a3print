@@ -1,8 +1,15 @@
+"use client";
+
 import Image from "next/image";
+import { NotFoundForm } from "../ui/not-found-form";
+import { cn } from "@/lib/utils";
+import { useState } from "react";
 
 export function NotFoundOffer() {
+	const [isOpen, setOpen] = useState(false);
+
 	return (
-		<div className="w-full bg-(--primary-color)">
+		<div className="relative w-full bg-(--primary-color)">
 			<div className="w-full lg:max-w-[1024px] xl:max-w-[1440px] px-3.75 lg:pl-5 xl:pl-[177px] mx-auto xl:pr-0 pt-12 md:pt-14.5 lg:py-18.75 pb-12.5 flex flex-col lg:flex-row items-center gap-7.5 lg:gap-20 xl:gap-29">
 				<Image
 					src="/no-file.svg"
@@ -41,15 +48,35 @@ export function NotFoundOffer() {
 					</div>
 
 					<div className="flex flex-col items-center lg:flex-row gap-3 lg:gap-5">
-						<button className="hover:drop-shadow-md max-lg:hover:drop-shadow-sm flex justify-center items-center bg-(--font-secondary-color) rounded-[4px] px-5 py-4 h-12 lg:h-13 w-86.25 lg:w-62.5 font-montserrat font-semibold text-base leading-[125%] tracking-[-0.01em] text-white">
+						<button
+							onClick={() => setOpen(true)}
+							className="hover:drop-shadow-md max-lg:hover:drop-shadow-sm flex justify-center items-center bg-(--font-secondary-color) rounded-[4px] px-5 py-4 h-12 lg:h-13 w-86.25 lg:w-62.5 font-montserrat font-semibold text-base leading-[125%] tracking-[-0.01em] text-white"
+						>
 							Рассчитать заказ
 						</button>
-						<button className="hover:drop-shadow-md max-lg:hover:drop-shadow-sm border-2 border-(--font-secondary-color) flex justify-center items-center  rounded-[4px] px-5 py-4 h-12 lg:h-13 w-86.25 lg:w-62.5 font-montserrat font-semibold text-base leading-[125%] tracking-[-0.01em] text-(--font-secondary-color)">
+						<button
+							onClick={() => setOpen(true)}
+							className="hover:drop-shadow-md max-lg:hover:drop-shadow-sm border-2 border-(--font-secondary-color) flex justify-center items-center  rounded-[4px] px-5 py-4 h-12 lg:h-13 w-86.25 lg:w-62.5 font-montserrat font-semibold text-base leading-[125%] tracking-[-0.01em] text-(--font-secondary-color)"
+						>
 							Задать вопрос
 						</button>
 					</div>
 				</div>
 			</div>
+
+			{isOpen && (
+				<div
+					className={cn(
+						" bg-black/50 fixed w-screen h-screen left-0 top-0 flex justify-center items-center px-5 z-20"
+					)}
+					onClick={() => setOpen(false)}
+				>
+					<NotFoundForm
+						close={() => setOpen(false)}
+						key="not-found-offer-form"
+					/>
+				</div>
+			)}
 		</div>
 	);
 }
