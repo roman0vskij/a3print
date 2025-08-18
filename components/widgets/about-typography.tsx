@@ -1,18 +1,41 @@
 import Image from "next/image";
-import { Title } from "../ui/title";
+import { useTranslations } from "next-intl";
 
 export function AboutTypography() {
+  const t = useTranslations("HomePage.AboutTypography");
+
   return (
     <div
       id="about-typography"
       className="flex flex-col items-center w-full pt-10 lg:pt-20 px-3.75 pb-9.5 lg:pb-17.75"
     >
-      <Title title="О типографии" />
+      <h2
+        className="lg:hidden text-center text-4xl md:text-5xl lg:text-6xl font-medium leading-[129%]"
+        key={t("title.1")}
+      >
+        {t("title.1")}
+      </h2>
 
-      <p className="w-full max-w-[345px] mt-4 text-center text-xl leading-[129%]">
-        А3 ПРИНТ — надежная типография в Алматы.
+      <h2
+        className="max-lg:hidden text-center text-4xl md:text-5xl lg:text-6xl font-medium leading-[129%]"
+        key={t("title.2.1")}
+      >
+        <span className="text-(--font-blue-color) text-center text-4xl md:text-5xl lg:text-6xl font-medium leading-[129%]">
+          {t("title.2.1")}
+        </span>
+        {t("title.2.2")}
+      </h2>
+
+      <p className="lg:hidden w-full max-w-[345px] mt-4 text-center text-xl leading-[129%]">
+        {t("p1.1.1")}
         <br />
-        <span className="text-(--font-blue-color)">И это не просто слова!</span>
+        <span className="text-(--font-blue-color) text-center text-xl leading-[129%]">
+          {t("p1.1.2")}
+        </span>
+      </p>
+
+      <p className="max-lg:hidden w-full max-w-190 mt-5 text-center text-[28px] leading-[129%]">
+        {t("p1.2")}
       </p>
 
       <div className="flex flex-col items-center lg:flex-row lg:items-start mt-15 lg:mt-24 mx-auto gap-6 lg:justify-between w-full max-w-[1260px]">
@@ -31,20 +54,18 @@ export function AboutTypography() {
           <div className="bg-(--primary-color) h-0.5 w-50 lg:w-[354px] rounded-xs mt-4 lg:mt-7 mb-3 lg:mb-0.75" />
 
           <p className="max-w-[343px] md:max-w-[400px] lg:max-w-[420px] max-lg:text-center lg:text-end text-xs md:text-sm lg:text-base font-medium leading-[140%] font-montserrat">
-            Когда-то мы были рекламным агентством, <br />а сегодня это
-            полиграфический центр со своим технопарком на 16+ единиц
-            оборудования и команда, которая знает всё о печати. Мы следим за
-            трендами в полиграфии и каждые полгода обновляем оборудование и
-            внедряем новые технологии — потому что для нас важно, чтобы{" "}
+            {t("p2.1")}
+            <br />
+            {t("p2.2")}
             <span className="max-lg:text-center text-xs md:text-sm lg:text-base leading-[140%] font-semibold text-(--font-blue-color) font-montserrat">
-              результат радовал и наших клиентов, и клиентов наших клиентов
+              {t("p2.3")}
             </span>
           </p>
         </div>
 
         <div className="rounded-md w-[345px] lg:w-[300px] h-[236px] lg:h-110 bg-[url(/side-view-woman-with-color-palette.jpg)] bg-bottom bg-cover" />
 
-        <div className="flex flex-col items-center lg:items-start">
+        <div className="flex flex-col items-center lg:items-start lg:self-end">
           <div className="relative w-12 md:w-25 h-9 md:h-18 flex items-end justify-center">
             <div className="bg-(--primary-color) rounded-[4px] w-12 md:w-25 h-4.75 md:h-10" />
             <Image
@@ -59,21 +80,23 @@ export function AboutTypography() {
           <div className="bg-(--primary-color) h-0.5 w-50 lg:w-[354px] rounded-xs mt-4 lg:mt-4 mb-3 lg:mb-7" />
 
           <p className="max-w-[345px] md:max-w-[400px] lg:max-w-[420px] max-lg:text-center text-xs md:text-sm lg:text-base font-medium leading-[140%] font-montserrat">
-            За 17 лет в рекламно-печатном бизнесе мы научились не просто
-            “печатать по ТЗ”, а{" "}
+            {t("p3.1")}
             <span className="max-lg:text-center text-xs md:text-sm lg:text-base leading-[140%] font-semibold text-(--font-blue-color) font-montserrat">
-              глубоко разбираться в задачах бизнеса.
-            </span>{" "}
-            Предлагаем решения, которые экономят время, деньги и нервы — и
-            доставляем заказы вовремя прямо к вам в руки. Нам доверяют заказы
-            любой сложности: от фото <br />
-            на холсте в подарок самым близким людям <br />
-            до архитектурных проектов, оформления витрин <br />и изготовления
-            наружных вывесок. И независимо <br />
-            от стоимости и тиража, вы можете рассчитывать <br />
-            на то, что{" "}
+              {t("p3.2")}
+            </span>
+            {t("p3.3")}
+            <br className="lg:hidden" />
+            {t("p3.4")}
+            <br className="lg:hidden" />
+            {t("p3.5")}
+            <br className="lg:hidden" />
+            {t("p3.6")}
+            <br className="lg:hidden" />
+            {t("p3.7")}
+            <br className="lg:hidden" />
+            {t("p3.8")}
             <span className="max-lg:text-center text-xs md:text-sm lg:text-base leading-[140%] font-semibold text-(--font-blue-color) font-montserrat">
-              каждый заказ в А3 ПРИНТ будет выполнен безупречно
+              {t("p3.9")}
             </span>
           </p>
         </div>

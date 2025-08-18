@@ -1,18 +1,21 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export function TypographyFullCycle() {
+  const t = useTranslations("HomePage.TypographyFullCycle");
+
   return (
     <div className="relative overflow-x-hidden w-full">
       <h1 className="w-full h-full mt-28 lg:mt-35.5 max-w-100 md:max-w-115 lg:max-w-145 xl:max-w-165 mx-auto text-center text-4xl md:text-5xl lg:text-6xl xl:text-[70px] font-medium leading-[122%] lg:leading-[129%]">
-        Типография полного цикла
-        <br />в Алматы
+        {t("h1.1")}
+        <br />
+        {t("h1.2")}
       </h1>
       <p className="w-full h-full mt-7 md:mt-8 lg:mt-9 xl:mt-10 mx-auto max-w-58 sm:max-w-90 lg:max-w-180 xl:max-w-200 text-center text-sm md:text-lg lg:text-xl xl:text-[22px] font-medium leading-[140%] font-montserrat">
-        Печать визиток, баннеров, календарей и другой полиграфической продукции
-        с доставкой по Алматы и Казахстану
+        {t("p")}
       </p>
       <button className="hover:drop-shadow-md max-lg:hover:drop-shadow-sm flex justify-center items-center bg-(--primary-color) rounded-sm mx-auto mt-9 lg:mt-8 px-5 py-4 h-12 lg:h-13 w-65 lg:w-72.5 font-montserrat font-semibold text-base leading-[125%] tracking-[-0.01em] text-(--font-secondary-color)">
-        Заказать печать сейчас
+        {t("button")}
       </button>
 
       <div className="flex justify-center items-center flex-wrap mx-auto mt-13 md:mt-15 lg:mt-17 xl:mt-18.75 gap-5.75 lg:gap-12.25 w-71.5 md:w-full h-21.75 md:h-12.5">
