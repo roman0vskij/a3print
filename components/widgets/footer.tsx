@@ -13,7 +13,7 @@ type TProps = {
 
 function Text({ children }: TProps) {
   return (
-    <p className="max-w-30 w-full text-white font-montserrat font-light text-base leading-[129%]">
+    <p className="max-w-30 w-full text-white font-montserrat text-base leading-[129%]">
       {children}
     </p>
   );
@@ -114,7 +114,7 @@ export function Footer() {
             </p>
 
             <div className="flex flex-col gap-2 lg:gap-4">
-              <div className="flex gap-12.5 border-b border-[#686a73] pb-1.5 lg:pb-2 w-full">
+              <div className="flex gap-12.5 border-t border-[#686a73] pt-3 lg:pt-4 w-full">
                 <p className="max-w-30 w-full text-white font-montserrat text-base leading-[129%]">
                   Пн — Пт
                 </p>
@@ -125,7 +125,9 @@ export function Footer() {
 
               <div className="flex gap-12.5">
                 <Text>Сб — Вс</Text>
-                <Text> Выходной</Text>
+                <p className="max-w-30 w-full text-(--primary-color) font-montserrat font-medium text-base leading-[129%]">
+                  Выходной
+                </p>
               </div>
 
               {items.map((it) => (
@@ -138,7 +140,9 @@ export function Footer() {
                     <Text>{it.from}</Text>
                   )}
 
-                  <Text>{it.title}</Text>
+                  <p className="max-w-30 w-full text-(--primary-color) font-montserrat font-medium text-base leading-[129%]">
+                    {it.title}
+                  </p>
                 </div>
               ))}
             </div>

@@ -1,3 +1,4 @@
+import { FadeInSection } from "@/components/ui/animation-wrapper";
 import { AboutTypography } from "@/components/widgets/about-typography";
 import { Contacts } from "@/components/widgets/contacts";
 import { FAQ } from "@/components/widgets/faq";
@@ -14,35 +15,55 @@ import { WhatWeOffer } from "@/components/widgets/what-we-offer";
 import { WhyWe } from "@/components/widgets/why-we";
 
 export default function HomePage() {
-	return (
-		<div className="flex flex-col items-center">
-			<Header />
+  return (
+    <div className="flex flex-col items-center">
+      <Header />
 
-			<TypographyFullCycle />
+      <TypographyFullCycle />
 
-			<WhatWeOffer />
+      <FadeInSection>
+        <WhatWeOffer />
+      </FadeInSection>
 
-			<NotFoundOffer />
+      <FadeInSection>
+        <NotFoundOffer />
+      </FadeInSection>
 
-			<AboutTypography />
+      <FadeInSection>
+        <AboutTypography />
+      </FadeInSection>
 
-			<Portfolio />
+      <FadeInSection>
+        <Portfolio />
+      </FadeInSection>
 
-			<WhyWe />
+      <FadeInSection>
+        <WhyWe />
+      </FadeInSection>
 
-			<StagesOfWork />
+      <FadeInSection>
+        <StagesOfWork />
+      </FadeInSection>
 
-			<Files />
+      <FadeInSection>
+        <Files />
+      </FadeInSection>
 
-			<FAQ />
+      <FadeInSection>
+        <FAQ />
+      </FadeInSection>
 
-			<Maps />
+      <FadeInSection>
+        <Maps />
+      </FadeInSection>
 
-			<Reviews />
+      <Reviews />
 
-			<Contacts />
+      <FadeInSection>
+        <Contacts />
+      </FadeInSection>
 
-			<Footer />
-		</div>
-	);
+      <Footer />
+    </div>
+  );
 }

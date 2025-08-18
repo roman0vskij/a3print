@@ -17,7 +17,7 @@ export function AboutTypography() {
       </h2>
 
       <h2
-        className="max-lg:hidden text-center text-4xl md:text-5xl lg:text-6xl font-medium leading-[129%]"
+        className="max-lg:hidden max-w-260 text-center text-4xl md:text-5xl lg:text-6xl font-medium leading-[129%]"
         key={t("title.2.1")}
       >
         <span className="text-(--font-blue-color) text-center text-4xl md:text-5xl lg:text-6xl font-medium leading-[129%]">

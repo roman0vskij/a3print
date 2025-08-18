@@ -70,9 +70,9 @@ export function TypographyFullCycle() {
         />
       </div>
 
-      <div className="absolute bg-contain animate-pulse translate-x-[-50%] bg-[url(/yellow-bg.svg)] top-[-136px] lg:top-[-170px] left-1/2 size-60 md:size-70 lg:size-87" />
-      <div className="absolute bg-contain animate-pulse translate-x-[50%] bg-[url(/pink-bg.svg)] top-14.5 md:top-18.5 lg:top-24.5 right-0 md:right-7 lg:right-15 size-60.75 md:size-85 lg:size-111" />
-      <div className="absolute bg-contain animate-pulse translate-x-[-50%] bg-[url(/blue-bg.svg)] top-27.5 md:top-19 lg:top-12.5 size-61.5 md:size-100 lg:size-136" />
+      <div className="absolute bg-contain yellow-animation translate-x-[-50%] bg-[url(/yellow-bg.svg)] top-[-136px] lg:top-[-170px] left-1/2 size-60 md:size-70 lg:size-87" />
+      <div className="absolute bg-contain pink-animation translate-x-[50%] bg-[url(/pink-bg.svg)] top-14.5 md:top-18.5 lg:top-24.5 right-0 md:right-7 lg:right-15 size-60.75 md:size-85 lg:size-111" />
+      <div className="absolute bg-contain blue-animation translate-x-[-50%] bg-[url(/blue-bg.svg)] top-27.5 md:top-19 lg:top-12.5 size-61.5 md:size-100 lg:size-136" />
     </div>
   );
 }
