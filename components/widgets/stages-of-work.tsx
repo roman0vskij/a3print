@@ -161,7 +161,7 @@ export function StagesOfWork() {
   return (
     <div
       id="stages-of-work"
-      className="relative flex flex-col items-center px-3.75 py-10 lg:pb-9.25 md:w-full max-w-[1440px]"
+      className="mx-auto relative flex flex-col items-center px-3.75 py-10 lg:pb-9.25 md:w-full max-w-[1440px]"
     >
       <Title title={t("title")} />
 

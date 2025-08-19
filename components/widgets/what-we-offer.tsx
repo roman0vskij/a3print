@@ -8,7 +8,7 @@ export function WhatWeOffer() {
   return (
     <div
       id="what-we-offer"
-      className="mt-12 lg:mt-30.75 pt-10 w-full max-w-[1440px] flex flex-col items-center"
+      className="mx-auto mt-12 lg:mt-30.75 pt-10 w-full max-w-[1440px] flex flex-col items-center"
     >
       <h2 className="max-w-110 md:max-w-200 lg:max-w-300 h-full mx-auto px-8.25 text-center text-[32px] md:text-5xl lg:text-6xl font-medium leading-[122%] lg:leading-[129%]">
         {t("h2.1")}

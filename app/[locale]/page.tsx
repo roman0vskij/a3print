@@ -5,6 +5,7 @@ import { FAQ } from "@/components/widgets/faq";
 import { Files } from "@/components/widgets/files";
 import { Footer } from "@/components/widgets/footer";
 import { Header } from "@/components/widgets/header";
+import { LinkWidget } from "@/components/widgets/links-widget";
 import { Maps } from "@/components/widgets/maps";
 import { NotFoundOffer } from "@/components/widgets/not-founde-offer";
 import { Portfolio } from "@/components/widgets/portfolio";
@@ -64,6 +65,8 @@ export default function HomePage() {
       </FadeInSection>
 
       <Footer />
+
+      <LinkWidget />
     </div>
   );
 }

@@ -15,7 +15,7 @@ export function Files() {
   const t = useTranslations("HomePage.Files");
 
   return (
-    <div className="flex flex-col md:flex-row items-center pt-11.25 pb-12 md:py-13 lg:py-17.5 md:gap-10 lg:gap-28.25 lg:px-5">
+    <div className="mx-auto flex flex-col md:flex-row items-center justify-center pt-11.25 pb-12 md:py-13 lg:py-17.5 md:gap-10 lg:gap-28.25 lg:px-5">
       <div className="flex flex-col items-center">
         <Image
           src="/file.svg"

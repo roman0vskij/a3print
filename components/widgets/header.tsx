@@ -69,45 +69,45 @@ export function Header() {
               href="#about-typography"
               onClick={toggle}
             >
-              <div className="bg-(--primary-color)" />
+              <div className="hidden md:block bg-(--primary-color)" />
               <p>{t("1")}</p>
-              <div className="bg-(--primary-color)" />
+              <div className="hidden md:block bg-(--primary-color)" />
             </a>
             <a
               className="font-medium text-[28px] md:text-5xl lg:text-6xl leading-[122%] lg:leading-[129%] text-center lg:text-(--font-hover-color) a-hover"
               href="#what-we-offer"
               onClick={toggle}
             >
-              <div className="bg-(--primary-color)" />
+              <div className="hidden md:block bg-(--primary-color)" />
               <p>{t("2")}</p>
-              <div className="bg-(--primary-color)" />
+              <div className="hidden md:block bg-(--primary-color)" />
             </a>
             <a
               className="font-medium text-[28px] md:text-5xl lg:text-6xl leading-[122%] lg:leading-[129%] text-center lg:text-(--font-hover-color) a-hover"
               href="#portfolio"
               onClick={toggle}
             >
-              <div className="bg-(--primary-color)" />
+              <div className="hidden md:block bg-(--primary-color)" />
               <p>{t("3")}</p>
-              <div className="bg-(--primary-color)" />
+              <div className="hidden md:block bg-(--primary-color)" />
             </a>
             <a
               className="font-medium text-[28px] md:text-5xl lg:text-6xl leading-[122%] lg:leading-[129%] text-center lg:text-(--font-hover-color) a-hover"
               href="#stages-of-work"
               onClick={toggle}
             >
-              <div className="bg-(--primary-color)" />
+              <div className="hidden md:block bg-(--primary-color)" />
               <p>{t("4")}</p>
-              <div className="bg-(--primary-color)" />
+              <div className="hidden md:block bg-(--primary-color)" />
             </a>
             <a
               className="font-medium text-[28px] md:text-5xl lg:text-6xl leading-[122%] lg:leading-[129%] text-center lg:text-(--font-hover-color) a-hover"
               href="#contacts"
               onClick={toggle}
             >
-              <div className="bg-(--primary-color)" />
+              <div className="hidden md:block bg-(--primary-color)" />
               <p>{t("5")}</p>
-              <div className="bg-(--primary-color)" />
+              <div className="hidden md:block bg-(--primary-color)" />
             </a>
           </div>
         )}

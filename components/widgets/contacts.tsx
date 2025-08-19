@@ -8,7 +8,7 @@ export function Contacts() {
   return (
     <div
       id="contacts"
-      className="flex flex-col lg:flex-row lg:gap-5 lg:justify-between items-center pt-12 py-11.5 md:py-15 lg:pt-20 lg:pb-40 px-3.75 lg:px-5 xl:px-0 w-full max-w-[1128px]"
+      className="mx-auto flex flex-col lg:flex-row lg:gap-5 lg:justify-between items-center pt-12 py-11.5 md:py-15 lg:pt-20 lg:pb-40 px-3.75 lg:px-5 xl:px-0 w-full max-w-[375px] md:max-w-[1128px]"
     >
       <div className="lg:order-2">
         <h3 className="text-center lg:text-start w-87 md:w-114 lg:w-124 text-[28px] md:text-4xl lg:text-[40px] font-medium leading-[125%] lg:leading-[129%]">

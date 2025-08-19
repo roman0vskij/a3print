@@ -219,7 +219,7 @@ export function OffersAccordion() {
       type="single"
       collapsible
       defaultValue="item-2"
-      className="lg:hidden max-w-[345px] md:max-w-[500px] w-full flex flex-col md:flex-row md:flex-wrap gap-3 items-center mx-auto"
+      className="lg:hidden max-w-[345px] md:max-w-[500px] w-full flex flex-col gap-3 items-center mx-auto"
     >
       {items.map(({ id, value, items }) => (
         <AccordionItem
