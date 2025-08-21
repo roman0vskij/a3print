@@ -7,7 +7,7 @@ import { Footer } from "@/components/widgets/footer";
 import { Header } from "@/components/widgets/header";
 import { LinkWidget } from "@/components/widgets/links-widget";
 import { Maps } from "@/components/widgets/maps";
-import { NotFoundOffer } from "@/components/widgets/not-founde-offer";
+import { NotFoundOffer } from "@/components/widgets/not-found-offer";
 import { Portfolio } from "@/components/widgets/portfolio";
 import { Reviews } from "@/components/widgets/reviews";
 import { StagesOfWork } from "@/components/widgets/stages-of-work";
@@ -26,9 +26,7 @@ export default function HomePage() {
         <WhatWeOffer />
       </FadeInSection>
 
-      <FadeInSection>
-        <NotFoundOffer />
-      </FadeInSection>
+      <NotFoundOffer />
 
       <FadeInSection>
         <AboutTypography />

@@ -7,9 +7,10 @@ import { useTranslations } from "next-intl";
 
 type TProps = {
   close: () => void;
+  text: string;
 };
 
-export function NotFoundForm({ close }: TProps) {
+export function NotFoundForm({ close, text }: TProps) {
   const t = useTranslations("HomePage.NotFoundForm");
 
   function onsubmit(e: FormEvent<HTMLFormElement>) {
@@ -46,7 +47,7 @@ export function NotFoundForm({ close }: TProps) {
       <input
         name="offer"
         className="mb-4 lg:mb-5 border border-[#e0e0e0] py-2.5 px-4 w-full h-11 rounded-sm font-montserrat font-medium text-base leading-[150%] placeholder:opacity-40 placeholder:text-[#272835]"
-        placeholder={t("input2")}
+        placeholder={text === "Услуга" ? t("input2") : t("input3")}
       />
       <PhoneInput />
       <button
