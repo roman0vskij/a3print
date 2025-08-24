@@ -22,10 +22,10 @@ function Slide({ r }: { r: TReview }) {
   return (
     <div className="w-full rounded-[8px] bg-white p-5 custom-shadow lg:max-w-96.5">
       <div className="flex gap-5">
-        <p className="text-2xl lg:text-[28px] leading-[129%] text-(--font-blue-color)">
+        <p className="sub2-font-nunito-sans text-2xl lg:text-[28px] leading-[129%] text-(--font-blue-color)">
           {r.rating}
         </p>
-        <p className="text-[22px] lg:text-2xl leading-[129%] blur-[7px]">
+        <p className="sub2-font-nunito-sans text-[22px] lg:text-2xl leading-[129%] blur-[7px]">
           {r.name}
         </p>
       </div>

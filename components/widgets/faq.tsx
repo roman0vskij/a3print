@@ -7,7 +7,7 @@ export function FAQ() {
 
   return (
     <div className="flex flex-col items-center gap-10 md:gap-12 lg:gap-17.5 pt-10 md:py-15 lg:py-20 pb-13 px-3.75 w-full">
-      <Title title={t("title")} w="w-60 md:w-70 lg:w-full" />
+      <Title title={t("title")} w="w-50 md:w-70 lg:w-full" />
       <div className="w-full">
         <FAQAccordion />
       </div>

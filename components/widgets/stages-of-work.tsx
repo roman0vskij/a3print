@@ -165,9 +165,11 @@ export function StagesOfWork() {
     >
       <Title title={t("title")} />
 
-      <p className="w-70 md:w-full mt-3 text-center text-[15px] md:text-xl lg:text-[28px] leading-[140%]">
+      <p className="sub2-font-nunito-sans w-70 md:w-full mt-3 text-center text-[15px] md:text-xl lg:text-[28px] leading-[140%]">
         {t("p1.0")}
-        <span className="text-(--font-blue-color)">{t("p1.1")}</span>
+        <span className="sub2-font-nunito-sans text-(--font-blue-color)">
+          {t("p1.1")}
+        </span>
         {t("p1.2")}
         <br className="lg:hidden" />
         {t("p1.3")}
@@ -189,9 +191,13 @@ export function StagesOfWork() {
             {t("stage3.1")}
             <br className="md:hidden" />
             <span className="text-[11px] md:text-xs lg:text-base leading-[150%] font-montserrat whitespace-pre-line font-semibold opacity-80">
-              {t("stage3.2")}
+              {t("stage3.2.1")}
+              <br className="md:hidden" />
+              {t("stage3.2.2")}
             </span>
             {t("stage3.3")}
+            <br className="md:hidden" />
+            {t("stage3.4")}
           </p>
         </StageOfWork>
         <StageOfWork props={stages[3]} i={3} key={`stage4`}>
@@ -203,12 +209,16 @@ export function StagesOfWork() {
         </StageOfWork>
         <StageOfWork props={stages[4]} i={4} key={`stage5`}>
           <p className="md:text-center font-medium text-[11px] md:text-xs lg:text-base leading-[150%] font-montserrat opacity-80 whitespace-pre-line">
-            {t("stage5")}
+            {t("stage5.1")}
+            <br className="md:hidden" />
+            {t("stage5.2")}
           </p>
         </StageOfWork>
         <StageOfWork props={stages[5]} i={5} key={`stage6`}>
           <p className="md:text-center font-medium text-[11px] md:text-xs lg:text-base leading-[150%] font-montserrat opacity-80 whitespace-pre-line">
-            {t("stage6")}
+            {t("stage6.1")}
+            <br className="md:hidden" />
+            {t("stage6.2")}
           </p>
         </StageOfWork>
         <div className="absolute md:hidden left-5.75 top-10 w-0.5 h-[85%] bg-linear-to-b from-[#fff5cc] to-[#fbc40e]" />

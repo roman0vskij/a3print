@@ -69,15 +69,19 @@ export function Footer() {
 
             <div className="mr-3.75 flex flex-col justify-between h-25 lg:h-30.75">
               <div>
-                <p className="text-white font-montserrat font-semibold text-sm lg:text-base leading-[129%]">
+                <p className="text-white font-montserrat font-semibold text-sm lg:text-base leading-[129%] pointer-events-none">
                   +7 777 130 5838
                 </p>
-                <p className="text-white font-montserrat text-sm lg:text-base leading-[150%] mt-1 lg:mt-1.5">
+                <p className="text-white font-montserrat text-sm lg:text-base leading-[150%] mt-1 lg:mt-1.5 pointer-events-none">
                   info@a3print.kz
                 </p>
               </div>
               <div className="flex gap-3">
-                <a className="cursor-pointer">
+                <a
+                  className="cursor-pointer"
+                  href="https://api.whatsapp.com/send?phone=77003283068"
+                  target="_blank"
+                >
                   <Image
                     src="/social-media/wp.svg"
                     alt="whatsapp"
@@ -86,7 +90,10 @@ export function Footer() {
                     className="opacity-50 hover:opacity-100 size-7 lg:size-8"
                   />
                 </a>
-                <a className="cursor-pointer">
+                <a
+                  className="lg:hidden cursor-pointer"
+                  href="instagram://user?username=a3print.kz"
+                >
                   <Image
                     src="/social-media/ig.svg"
                     alt="instagram"
@@ -95,7 +102,24 @@ export function Footer() {
                     className="opacity-50 hover:opacity-100 size-7 lg:size-8"
                   />
                 </a>
-                <a className="cursor-pointer">
+                <a
+                  className="max-lg:hidden cursor-pointer"
+                  href="https://www.instagram.com/a3print.kz?igsh=MTJpZmtkN2FlemlrcA=="
+                  target="_blank"
+                >
+                  <Image
+                    src="/social-media/ig.svg"
+                    alt="instagram"
+                    width={32}
+                    height={32}
+                    className="opacity-50 hover:opacity-100 size-7 lg:size-8"
+                  />
+                </a>
+                <a
+                  className="cursor-pointer"
+                  href="https://www.tiktok.com/@a3print_almaty?lang=ru-RU"
+                  target="_blank"
+                >
                   <Image
                     src="/social-media/tt.svg"
                     alt="tiktok"
@@ -109,7 +133,7 @@ export function Footer() {
           </div>
 
           <div className="flex flex-col md:justify-end gap-7 lg:gap-10 md:w-full md:ml-[5%] lg:ml-[15%] xl:ml-[21%]">
-            <p className="text-white text-2xl lg:text-[28px] leading-[129%] mt-8.25">
+            <p className="sub2-font-nunito-sans text-white text-2xl lg:text-[28px] leading-[129%] mt-8.25">
               {t("p2")}
             </p>
 

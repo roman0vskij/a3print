@@ -1,30 +1,44 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { useState } from "react";
 
-function PopUp() {
+function PopUp({ isVisible }: { isVisible: boolean }) {
   return (
-    <div className="fixed flex flex-col items-center w-15 h-fit p-3.5 rounded-full gap-2.5 bg-white bottom-22 lg:bottom-27 right-5 lg:right-10 links-widget-shadow">
-      <a href="https://ig.me/m/kksyushkka">
-        <Image src="/links-widget/inst.svg" alt="inst" width={32} height={32} />
+    <div
+      className={cn(
+        "fixed flex flex-col items-center h-fit rounded-full gap-2.5 bg-white bottom-22 lg:bottom-27 right-5 lg:right-10",
+        isVisible ? "w-15 p-3.5 links-widget-shadow" : "w-0"
+      )}
+    >
+      <a href="https://ig.me/m/a3print.kz">
+        <Image
+          src="/links-widget/inst.svg"
+          alt="inst"
+          width={32}
+          height={32}
+          loading="eager"
+        />
       </a>
-      <div className="h-0.25 w-9.5 bg-[#d9d9d9]" />
+      {isVisible && <div className="h-0.25 w-9.5 bg-[#d9d9d9]" />}
       <a href="https://wa.me/77771305838">
         <Image
           src="/links-widget/whatsapp.svg"
           alt="whatsapp"
           width={32}
           height={32}
+          loading="eager"
         />
       </a>
-      <div className="lg:hidden h-0.25 w-9.5 bg-[#d9d9d9]" />
+      {isVisible && <div className="lg:hidden h-0.25 w-9.5 bg-[#d9d9d9]" />}
       <a className="lg:hidden" href="tel:+77771305838">
         <Image
           src="/links-widget/phone.svg"
           alt="phone"
           width={32}
           height={32}
+          loading="eager"
         />
       </a>
     </div>
@@ -75,7 +89,7 @@ export function LinkWidget() {
         </span>
       </button>
 
-      {flipped && <PopUp />}
+      <PopUp isVisible={flipped} />
     </>
   );
 }

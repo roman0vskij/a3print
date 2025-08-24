@@ -18,7 +18,7 @@ export function ContactForm({ key }: { key: string }) {
       onSubmit={(e) => onsubmit(e)}
       className="flex flex-col items-center lg:items-start bg-white rounded-md p-9 custom-shadow w-full max-w-[548px]"
     >
-      <p className="mb-7 text-center text-2xl lg:text-[28px] leading-[129%]">
+      <p className="sub2-font-nunito-sans mb-7 text-center text-2xl lg:text-[28px] leading-[129%]">
         {t("p")}
       </p>
       <input

@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Nunito Sans Var";
+  src: url("NunitoSans-VariableFont.woff2") format("woff2");
+}
+
+.font-nunito-sans {
+  font-family: "Nunito Sans Var", sans-serif;
+  font-variation-settings: "wdth" 125, "wght" 750, "YTLC" 531, "opsz" 7.6;
+  letter-spacing: -3px;
+}
+
+.sub-font-nunito-sans {
+  font-family: "Nunito Sans Var", sans-serif;
+  font-variation-settings: "wdth" 125, "wght" 750, "YTLC" 531, "opsz" 7.6;
+  letter-spacing: -1px;
+}
+
+.sub2-font-nunito-sans {
+  font-family: "Nunito Sans Var", sans-serif;
+  font-variation-settings: "wdth" 125, "wght" 650, "YTLC" 531, "opsz" 7.6;
+  letter-spacing: -1px;
+}

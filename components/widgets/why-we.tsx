@@ -8,8 +8,10 @@ export function WhyWe() {
   return (
     <div className="pt-10 lg:py-17.5 pb-23.75 px-3.75 flex flex-col items-center mx-auto">
       <Title title={t("title")} />
-      <p className="w-full max-w-[345px] md:max-w-125 lg:max-w-170 mt-3 md:mt-4 lg:mt-5 text-center text-[15px] md:text-xl lg:text-[28px] leading-[140%] lg:leading-[129%]">
-        <span className="text-(--font-blue-color)">{t("p1.1")}</span>
+      <p className="sub2-font-nunito-sans w-full max-w-[325px] md:max-w-125 lg:max-w-170 mt-3 md:mt-4 lg:mt-5 text-center text-[15px] md:text-xl lg:text-[28px] leading-[140%] lg:leading-[129%]">
+        <span className="sub2-font-nunito-sans text-(--font-blue-color)">
+          {t("p1.1")}
+        </span>
         {t("p1.2")}
       </p>
       <div className="mt-12 md:mt-18 lg:mt-25 flex flex-col items-center max-w-[1140px]">
@@ -72,6 +74,8 @@ export function WhyWe() {
               {t("p2.9")}
             </span>
             {t("p2.10")}
+            <br className="lg:hidden" />
+            {t("p2.11")}
           </p>
         </div>
 
@@ -155,7 +159,9 @@ export function WhyWe() {
           <p className="max-w-[550px] w-[330.3px] md:w-[425px] lg:w-full text-center md:text-left text-xs md:text-sm lg:text-lg font-medium leading-[150%] font-montserrat">
             {t("p3.1")}
             <span className="text-(--font-blue-color) font-semibold font-montserrat">
-              {t("p3.2")}
+              {t("p3.2.1")}
+              <br className="hidden md:block lg:hidden xl:block" />
+              {t("p3.2.2")}
             </span>
             {t("p3.3")}
             <span className="text-(--font-blue-color) font-semibold font-montserrat">
@@ -174,7 +180,7 @@ export function WhyWe() {
           className="size-20 md:size-30 lg:size-45.5"
         />
         <div className="flex flex-col items-center md:items-start">
-          <p className="w-[310px] md:w-[410px] lg:w-[566px] text-center md:text-start text-[15px] md:text-xl lg:text-[28px] leading-[140%] lg:leading-[129%]">
+          <p className="sub2-font-nunito-sans  w-[290px] md:w-[410px] lg:w-[566px] text-center md:text-start text-[15px] md:text-xl lg:text-[28px] leading-[140%] lg:leading-[129%]">
             {t("p4")}
           </p>
           <p className="w-[300px] lg:w-[400px] mt-2 md:mt-3.5 lg:mt-5 text-center md:text-start text-xs md:text-sm lg:text-lg font-medium leading-[150%] font-montserrat">

@@ -229,7 +229,7 @@ export function OffersTabs() {
               width={220}
               className="w-55 h-25 rounded-[4px] grow-0 shrink-0"
             />
-            <p className="text-start font-medium text-xl leading-[125%] w-full max-w-72 h-fit">
+            <p className="sub-font-nunito-sans text-start font-medium text-xl leading-[125%] w-full max-w-72 h-fit">
               {tab.value}
             </p>
           </TabsTrigger>

@@ -26,7 +26,7 @@ export function NotFoundForm({ close, text }: TProps) {
       className="flex flex-col items-center bg-white rounded-md p-9 w-full max-w-[548px]"
     >
       <div className="flex w-full items-center mb-7">
-        <p className="text-center text-2xl lg:text-[28px] leading-[129%] w-full ml-2 px-2">
+        <p className="sub2-font-nunito-sans text-center text-xl lg:text-[28px] leading-[129%] w-full ml-2 px-2">
           {t("p")}
         </p>
         <button

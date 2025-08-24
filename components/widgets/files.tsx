@@ -24,7 +24,7 @@ export function Files() {
           height={150}
           className="size-20 lg:size-37.5"
         />
-        <h4 className="font-medium text-2xl md:text-3xl lg:text-[40px] leading-[120%] lg:leading-[129%] text-center max-w-55 md:max-w-70 lg:max-w-90 mt-5 md:mt-6 lg:mt-7.5 mb-3 md:mb-4 lg:mb-5">
+        <h4 className="font-nunito-sans font-medium text-2xl md:text-3xl lg:text-[40px] leading-[120%] lg:leading-[129%] text-center max-w-50 md:max-w-70 lg:max-w-90 mt-5 md:mt-6 lg:mt-7.5 mb-3 md:mb-4 lg:mb-5">
           {t("h1")}
         </h4>
         <p className="lg:hidden font-montserrat font-medium text-xs md:text-sm lg:text-base leading-[140%] text-center max-w-60 md:max-w-70 lg:max-w-110 mb-5 md:mb-7 lg:mb-9">
@@ -48,10 +48,10 @@ export function Files() {
           height={150}
           className="size-20 lg:size-37.5"
         />
-        <h4 className="lg:hidden font-medium text-2xl md:text-3xl lg:text-[40px] leading-[120%] lg:leading-[129%] text-center max-w-55 md:max-w-70 lg:max-w-90 mt-5 md:mt-6 lg:mt-7.5 mb-3 md:mb-4 lg:mb-5">
+        <h4 className="font-nunito-sans lg:hidden font-medium text-2xl md:text-3xl lg:text-[40px] leading-[120%] lg:leading-[129%] text-center max-w-50 md:max-w-70 lg:max-w-90 mt-5 md:mt-6 lg:mt-7.5 mb-3 md:mb-4 lg:mb-5">
           {t("h2.1")}
         </h4>
-        <h4 className="max-lg:hidden font-medium text-2xl md:text-3xl lg:text-[40px] leading-[120%] lg:leading-[129%] text-center max-w-55 md:max-w-70 lg:max-w-90 mt-5 md:mt-6 lg:mt-7.5 mb-3 md:mb-4 lg:mb-5">
+        <h4 className="font-nunito-sans max-lg:hidden font-medium text-2xl md:text-3xl lg:text-[40px] leading-[120%] lg:leading-[129%] text-center max-w-55 md:max-w-70 lg:max-w-90 mt-5 md:mt-6 lg:mt-7.5 mb-3 md:mb-4 lg:mb-5">
           {t("h2.2")}
         </h4>
         <p className="lg:hidden font-montserrat font-medium text-xs md:text-sm lg:text-base leading-[140%] text-center max-w-68 md:max-w-80 lg:max-w-110 mb-5 md:mb-7 lg:mb-9">

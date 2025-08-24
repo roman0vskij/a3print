@@ -34,7 +34,7 @@ const languages = [
   },
 ];
 
-export function LanguageSwitcher() {
+export function LanguageSwitcher({ isLittle }: { isLittle?: boolean }) {
   const locale = useLocale();
 
   const selectedLanguage = locale === "kz" ? languages[1] : languages[0];
@@ -53,7 +53,47 @@ export function LanguageSwitcher() {
     );
   }
 
-  return (
+  return isLittle ? (
+    <DropdownMenu>
+      <DropdownMenuTrigger className="flex items-center lg:mb-4">
+        <Image
+          src={selectedLanguage.img.src}
+          alt={selectedLanguage.img.alt}
+          width={selectedLanguage.img.width}
+          height={selectedLanguage.img.height}
+          className="mr-2 size-6"
+        />
+        <div className="text-start flex flex-col gap-1.5 leading-none justify-center">
+          <span className="text-xs leading-[140%] font-semibold font-montserrat w-4.75">
+            {selectedLanguage.name.toUpperCase()}
+          </span>
+        </div>
+        <ChevronDown className="ml-1.75 size-5" />
+      </DropdownMenuTrigger>
+      <DropdownMenuContent
+        className="w-full max-w-25 lg:max-w-26.25"
+        align="start"
+      >
+        {languages.map((language) => (
+          <DropdownMenuItem
+            key={language.id}
+            onClick={() => onSelectChange(language.name)}
+          >
+            <div className="flex items-center">
+              <div className="flex flex-col">
+                <span className="sub2-font-nunito-sans">
+                  {language.name.toUpperCase()}
+                </span>
+              </div>
+            </div>
+            {selectedLanguage.id === language.id && (
+              <Check className="ml-auto" />
+            )}
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  ) : (
     <DropdownMenu>
       <DropdownMenuTrigger className="flex items-center lg:mb-4">
         <Image
@@ -81,7 +121,9 @@ export function LanguageSwitcher() {
           >
             <div className="flex items-center">
               <div className="flex flex-col">
-                <span>{language.name.toUpperCase()}</span>
+                <span className="sub2-font-nunito-sans">
+                  {language.name.toUpperCase()}
+                </span>
               </div>
             </div>
             {selectedLanguage.id === language.id && (

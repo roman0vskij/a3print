@@ -228,7 +228,7 @@ export function OffersAccordion() {
           className="[&>div]:rounded-b-[8px] w-full max-w-108 rounded-xl min-h-[68px] [&>[data-state='open']~div]:shadow-lg"
         >
           <AccordionTrigger className="rounded-none [&[data-state=open]]:rounded-t-[8px] w-full p-4 flex justify-between items-center [&>div]:hidden [&[data-state=open]]:bg-(--primary-color)">
-            <p className="font-medium text-xs md:text-sm leading-[125%]">
+            <p className="sub-font-nunito-sans font-medium text-xs md:text-sm leading-[125%] max-w-40">
               {value}
             </p>
             <Image

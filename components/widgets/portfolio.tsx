@@ -18,8 +18,17 @@ export function Portfolio() {
             { src: "/carousel/2.jpg", alt: "Футболка FBSM" },
             { src: "/carousel/3.jpg", alt: "Салон красоты GIARDINO" },
             { src: "/carousel/4.jpg", alt: "Меню NINO" },
-            { src: "/carousel/5.jpg", alt: "Атек" },
+            { src: "/carousel/5.jpg", alt: "Gogra" },
             { src: "/carousel/6.jpg", alt: "Empire Dental Clinic" },
+            { src: "/carousel/7.jpg", alt: "BEHYPE" },
+            { src: "/carousel/8.jpg", alt: "Скетчбук" },
+            { src: "/carousel/9.jpg", alt: "Бейдж" },
+            { src: "/carousel/10.jpg", alt: "Бейдж 2" },
+            { src: "/carousel/11.jpg", alt: "Вывеска" },
+            { src: "/carousel/12.jpg", alt: "Буклет" },
+            { src: "/carousel/13.jpg", alt: "Бумажник" },
+            { src: "/carousel/14.jpg", alt: "Значок GEELY" },
+            { src: "/carousel/15.jpg", alt: "Атек" },
             { src: "/carousel/1.jpg", alt: "Фотообои и фрески" },
           ]}
         />

@@ -6,14 +6,14 @@ export function Maps() {
 
   return (
     <div className="flex flex-col items-center pt-12 lg:20 pb-18.25 lg:pb-22.75">
-      <h3 className="text-center text-[26px] md:text-4xl lg:text-[50px] font-medium leading-[125%] lg:leading-[129%] max-w-90 md:max-w-180 lg:max-w-250 lg:mt-13.75 lg:order-2">
+      <h3 className="font-nunito-sans text-center text-[26px] md:text-4xl lg:text-[50px] font-medium leading-[125%] lg:leading-[129%] max-w-80 md:max-w-180 lg:max-w-250 lg:mt-13.75 lg:order-2">
         {t("h3.0")}
-        <span className="text-center text-[26px] md:text-4xl lg:text-[50px] font-medium leading-[125%] lg:leading-[129%] text-(--font-blue-color)">
+        <span className="font-nunito-sans text-center text-[26px] md:text-4xl lg:text-[50px] font-medium leading-[125%] lg:leading-[129%] text-(--font-blue-color)">
           {t("h3.1")}
         </span>
         {t("h3.2")}
       </h3>
-      <p className="font-normal text-[15px] md:text-xl lg:text-[28px] leading-[140%] lg:leading-[129%] text-center mt-5 md:mt-7 lg:mt-10 mb-11.75 lg:mb-0 max-w-76 md:max-w-130 lg:max-w-180 lg:order-3">
+      <p className="sub2-font-nunito-sans font-normal text-[15px] md:text-xl lg:text-[28px] leading-[140%] lg:leading-[129%] text-center mt-5 md:mt-7 lg:mt-10 mb-11.75 lg:mb-0 max-w-76 md:max-w-130 lg:max-w-180 lg:order-3">
         {t("p")}
       </p>
 
@@ -32,7 +32,7 @@ export function Maps() {
               className="w-28.75 lg:w-67.5 h-6 lg:h-13.5"
             />
           </div>
-          <div className="absolute top-9.25 lg:-top-5 left-[50%] lg:-left-10 translate-x-[-50%] lg:translate-x-0 rounded-full size-15 lg:size-35 bg-(--primary-color) flex justify-center items-center text-[22px] lg:text-[50px] leading-[125%] lg:leading-[129%] text-(--font-hover-color)">
+          <div className="sub2-font-nunito-sans absolute top-9.25 lg:-top-5 left-[50%] lg:-left-10 translate-x-[-50%] lg:translate-x-0 rounded-full size-15 lg:size-35 bg-(--primary-color) flex justify-center items-center text-[22px] lg:text-[50px] leading-[125%] lg:leading-[129%] text-(--font-hover-color)">
             5.0
           </div>
         </a>
@@ -51,7 +51,7 @@ export function Maps() {
               className="w-21.25 lg:w-49.5 h-7 lg:h-16"
             />
           </div>
-          <div className="absolute top-9.25 lg:-top-5 max-lg:left-[50%] lg:-right-10 translate-x-[-50%] lg:translate-x-0 rounded-full size-15 lg:size-35 bg-(--primary-color) flex justify-center items-center text-[22px] lg:text-[50px] leading-[125%] lg:leading-[129%] text-(--font-hover-color)">
+          <div className="sub2-font-nunito-sans absolute top-9.25 lg:-top-5 max-lg:left-[50%] lg:-right-10 translate-x-[-50%] lg:translate-x-0 rounded-full size-15 lg:size-35 bg-(--primary-color) flex justify-center items-center text-[22px] lg:text-[50px] leading-[125%] lg:leading-[129%] text-(--font-hover-color)">
             4.8
           </div>
         </a>
@@ -62,7 +62,7 @@ export function Maps() {
           target="_blank"
         >
           <div className="rounded-full h-10.5 lg:h-25 w-37 lg:w-113 custom-shadow flex justify-center items-center">
-            <div className="absolute top-[-51px] lg:-top-30 left-[50%] translate-x-[-50%] rounded-full size-15 lg:size-35 bg-(--primary-color) flex justify-center items-center text-[22px] lg:text-[50px] leading-[125%] lg:leading-[129%] text-(--font-hover-color)">
+            <div className="sub2-font-nunito-sans absolute top-[-51px] lg:-top-30 left-[50%] translate-x-[-50%] rounded-full size-15 lg:size-35 bg-(--primary-color) flex justify-center items-center text-[22px] lg:text-[50px] leading-[125%] lg:leading-[129%] text-(--font-hover-color)">
               4.6
             </div>
             <Image

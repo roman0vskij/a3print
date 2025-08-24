@@ -11,9 +11,9 @@ export function Contacts() {
       className="mx-auto flex flex-col lg:flex-row lg:gap-5 lg:justify-between items-center pt-12 py-11.5 md:py-15 lg:pt-20 lg:pb-40 px-3.75 lg:px-5 xl:px-0 w-full max-w-[375px] md:max-w-[1128px]"
     >
       <div className="lg:order-2">
-        <h3 className="text-center lg:text-start w-87 md:w-114 lg:w-124 text-[28px] md:text-4xl lg:text-[40px] font-medium leading-[125%] lg:leading-[129%]">
+        <h3 className="font-nunito-sans text-center lg:text-start w-87 md:w-114 lg:w-124 text-[28px] md:text-4xl lg:text-[40px] font-medium leading-[125%] lg:leading-[129%]">
           {t("h3.1")}
-          <span className="text-[28px] md:text-4xl lg:text-[40px] leading-[125%] lg:leading-[129%] text-(--font-blue-color)">
+          <span className="font-nunito-sans text-[28px] md:text-4xl lg:text-[40px] leading-[125%] lg:leading-[129%] text-(--font-blue-color)">
             <br />
             {t("h3.2")}
           </span>
@@ -30,7 +30,7 @@ export function Contacts() {
                 className="size-6 md:size-7"
               />
             </div>
-            <p className="text-base md:text-xl lg:text-2xl leading-[129%] text-center">
+            <p className="sub2-font-nunito-sans text-base md:text-xl lg:text-2xl leading-[129%] text-center">
               +7 777 130 5838
             </p>
           </div>
@@ -44,7 +44,7 @@ export function Contacts() {
                 className="size-7 md:size-8"
               />
             </div>
-            <p className="text-base md:text-xl lg:text-2xl leading-[129%] text-center">
+            <p className="sub2-font-nunito-sans text-base md:text-xl lg:text-2xl leading-[129%] text-center">
               info@a3print.kz
             </p>
           </div>
