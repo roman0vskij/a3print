@@ -30,7 +30,7 @@ export function Footer() {
 
   async function loadItems() {
     const snap = await getDocs(collection(db, "items"));
-    setItems(snap.docs.map((d) => ({ id: d.id, ...d.data() })).reverse());
+    setItems(snap?.docs.map((d) => ({ id: d.id, ...d.data() })).reverse());
   }
 
   return (

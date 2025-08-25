@@ -5,17 +5,18 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBoDfXNiB5CbNR1qpUPnmR5f3YbML71zys",
-  authDomain: "a3print-76008.firebaseapp.com",
-  projectId: "a3print-76008",
-  storageBucket: "a3print-76008.firebasestorage.app",
-  messagingSenderId: "524073738938",
-  appId: "1:524073738938:web:49989177f81ea8d2d1d883"
+  apiKey: "AIzaSyCnTGYgzPgUa5rlEiwWB8zGsohqmYfo5YA",
+  authDomain: "a3print-14695.firebaseapp.com",
+  projectId: "a3print-14695",
+  storageBucket: "a3print-14695.firebasestorage.app",
+  messagingSenderId: "685951408696",
+  appId: "1:685951408696:web:99976c7ef63b6b3aa5e4cd",
+  measurementId: "G-42VPG2YYBW"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 
-carfan363@gmail.com
-123456
+a3print@gmail.com
+548435_stk
