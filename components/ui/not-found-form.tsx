@@ -44,6 +44,7 @@ export function NotFoundForm({ close, text }: TProps) {
     setMessage("");
     setPhoneNumber("");
     setDisabled(false);
+    close();
   }
 
   return (
