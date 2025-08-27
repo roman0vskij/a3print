@@ -6,7 +6,7 @@ export function TypographyFullCycle() {
 
   return (
     <div className="relative overflow-hidden w-full">
-      <h1 className="font-nunito-sans z-10 w-full h-full mt-28 lg:mt-35.5 max-w-100 md:max-w-115 lg:max-w-145 xl:max-w-165 mx-auto text-center text-4xl md:text-5xl lg:text-6xl xl:text-[70px] font-medium leading-[122%] lg:leading-[129%]">
+      <h1 className="relative font-nunito-sans z-2 w-full h-full mt-28 lg:mt-35.5 max-w-100 md:max-w-115 lg:max-w-145 xl:max-w-165 mx-auto text-center text-4xl md:text-5xl lg:text-6xl xl:text-[70px] font-medium leading-[122%] lg:leading-[129%]">
         {t("h1.1")}
         <br />
         {t("h1.2")}
@@ -16,7 +16,7 @@ export function TypographyFullCycle() {
         <br className="md:hidden" />
         {t("p.2")}
       </p>
-      <div className="mx-auto flex justify-center mt-9 lg:mt-8">
+      <div className="relative z-2 mx-auto flex justify-center mt-9 lg:mt-8">
         <a href="#contacts">
           <button className="hover:drop-shadow-md max-lg:hover:drop-shadow-sm flex justify-center items-center bg-(--primary-color) rounded-sm px-5 py-4 h-12 lg:h-13 w-65 lg:w-72.5 font-montserrat font-semibold text-base leading-[125%] tracking-[-0.01em] text-(--font-secondary-color)">
             {t("button")}
