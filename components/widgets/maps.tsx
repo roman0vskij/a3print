@@ -66,7 +66,7 @@ export function Maps() {
               4.6
             </div>
             <Image
-              src="/maps/ggl.jpg"
+              src="/maps/ggl.svg"
               alt="google"
               width={296}
               height={56}

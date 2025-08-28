@@ -26,49 +26,49 @@ export function TypographyFullCycle() {
 
       <div className="flex justify-center items-center flex-wrap mx-auto mt-13 md:mt-15 lg:mt-17 xl:mt-18.75 gap-5.75 lg:gap-12.25 w-71.5 md:w-full h-21.75 md:h-12.5">
         <Image
-          src="/companies/company4.jpg"
+          src="/companies/company4.svg"
           alt="2GIS"
           width={94.46}
           height={30}
           className="w-17.5 h-5.5 md:order-4 lg:w-23.75 lg:h-7.5"
         />
         <Image
-          src="/companies/company5.jpg"
+          src="/companies/company5.svg"
           alt="inDrive"
           width={105.1}
           height={30}
           className="w-19.5 h-5.5 md:order-5 lg:w-26.25 lg:h-7.5"
         />
         <Image
-          src="/companies/company6.jpg"
+          src="/companies/company6.svg"
           alt="КакТебе"
           width={110.21}
           height={35}
           className="w-20.5 h-6.5 md:order-6 lg:w-27.5 lg:h-8.75"
         />
         <Image
-          src="/companies/company1.jpg"
+          src="/companies/company1.svg"
           alt="акимат"
           width={50}
           height={50}
           className="size-9.25 md:order-1 lg:size-12.5"
         />
         <Image
-          src="/companies/company2.jpg"
+          src="/companies/company2.svg"
           alt="kingfisher"
           width={98.92}
           height={35}
           className="w-18.25 h-6.5 md:order-2 lg:w-24.75 lg:h-8.75"
         />
         <Image
-          src="/companies/company3.jpg"
+          src="/companies/company3.svg"
           alt="NINO"
           width={86.7}
           height={30}
           className="w-16 h-5.5 md:order-3 lg:w-21.75 lg:h-7.5"
         />
         <Image
-          src="/companies/company7.jpg"
+          src="/companies/company7.svg"
           alt="Coffee BOOM"
           width={55.89}
           height={50}

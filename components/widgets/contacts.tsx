@@ -30,9 +30,19 @@ export function Contacts() {
                 className="size-6 md:size-7"
               />
             </div>
-            <p className="sub2-font-nunito-sans text-base md:text-xl lg:text-2xl leading-[129%] text-center">
+            <a
+              href="tel:+77771305838"
+              className="lg:hidden sub2-font-nunito-sans text-base md:text-xl lg:text-2xl leading-[129%] text-center"
+            >
               +7 777 130 5838
-            </p>
+            </a>
+            <a
+              href="https://wa.me/77771305838"
+              target="_blank"
+              className="max-lg:hidden sub2-font-nunito-sans text-base md:text-xl lg:text-2xl leading-[129%] text-center"
+            >
+              +7 777 130 5838
+            </a>
           </div>
           <div className="flex flex-col lg:flex-row items-center gap-4">
             <div className="size-10 md:size-12 rounded-sm bg-(--primary-color) flex justify-center items-center">
@@ -44,9 +54,12 @@ export function Contacts() {
                 className="size-7 md:size-8"
               />
             </div>
-            <p className="sub2-font-nunito-sans text-base md:text-xl lg:text-2xl leading-[129%] text-center">
+            <a
+              href="mailto:info@a3print.kz"
+              className="sub2-font-nunito-sans text-base md:text-xl lg:text-2xl leading-[129%] text-center"
+            >
               info@a3print.kz
-            </p>
+            </a>
           </div>
         </div>
       </div>

@@ -32,9 +32,13 @@ export function Header() {
             >
               +7 777 130 5838
             </a>
-            <p className="max-lg:hidden lg:mb-5 lg:mr-7 text-center font-montserrat text-base leading-[129%] tracking-[0.03em] lg:tracking-normal font-medium">
+            <a
+              href="https://wa.me/77771305838"
+              target="_blank"
+              className="max-lg:hidden lg:mb-5 lg:mr-7 text-center font-montserrat text-base leading-[129%] tracking-[0.03em] lg:tracking-normal font-medium"
+            >
               +7 777 130 5838
-            </p>
+            </a>
             <div className="lg:hidden">
               <LanguageSwitcher isLittle />
             </div>
