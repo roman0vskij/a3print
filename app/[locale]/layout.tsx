@@ -158,6 +158,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://a3print.kz",
   },
+  other: {
+    "format-detection": "telephone=no, email=no",
+  },
 };
 
 export default async function RootLayout({
