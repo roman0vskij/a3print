@@ -5,7 +5,7 @@ import { Logo } from "../ui/logo";
 import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "@/lib/firebaseClient";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 type TProps = {
   children: React.ReactNode;
@@ -23,6 +23,7 @@ export function Footer() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [items, setItems] = useState<any[]>([]);
   const t = useTranslations("HomePage.Footer");
+  const locale = useLocale();
 
   useEffect(() => {
     loadItems();
@@ -30,7 +31,7 @@ export function Footer() {
 
   async function loadItems() {
     const snap = await getDocs(collection(db, "items"));
-    setItems(snap?.docs.map((d) => ({ id: d.id, ...d.data() })).reverse());
+    setItems(snap?.docs.map((d) => ({ id: d.id, ...d.data() })));
   }
 
   return (
@@ -150,7 +151,7 @@ export function Footer() {
               <div className="flex gap-12.5">
                 <Text>Сб — Вс</Text>
                 <p className="max-w-30 w-full text-(--primary-color) font-montserrat font-medium text-base leading-[129%]">
-                  Выходной
+                  {t("p3")}
                 </p>
               </div>
 
@@ -165,7 +166,7 @@ export function Footer() {
                   )}
 
                   <p className="max-w-30 w-full text-(--primary-color) font-montserrat font-medium text-base leading-[129%]">
-                    {it.title}
+                    {locale === "kz" ? it.titleKz : it.titleRu}
                   </p>
                 </div>
               ))}
