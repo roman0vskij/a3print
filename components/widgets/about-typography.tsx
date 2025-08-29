@@ -7,35 +7,20 @@ export function AboutTypography() {
   return (
     <div
       id="about-typography"
-      className="flex flex-col items-center w-full pt-10 lg:pt-20 px-3.75 pb-9.5 lg:pb-17.75"
+      className="flex flex-col items-center w-full pt-10 lg:pt-20 px-3.5 pb-9.5 lg:pb-17.75"
     >
       <h2
-        className="font-nunito-sans lg:hidden text-center text-4xl md:text-5xl lg:text-6xl font-medium leading-[129%]"
+        className="font-nunito-sans md:max-w-200 lg:max-w-250 max-w-100 text-center text-[25px] md:text-5xl lg:text-6xl font-medium leading-[129%]"
         key={t("title.1")}
       >
-        {t("title.1")}
+        <span className="font-nunito-sans text-(--font-blue-color) text-center text-[25px] md:text-5xl lg:text-6xl font-medium leading-[129%]">
+          {t("title.1")}
+        </span>
+        {t("title.2")}
       </h2>
 
-      <h2
-        className="font-nunito-sans max-lg:hidden max-w-260 text-center text-4xl md:text-5xl lg:text-6xl font-medium leading-[129%]"
-        key={t("title.2.1")}
-      >
-        <span className="font-nunito-sans text-(--font-blue-color) text-center text-4xl md:text-5xl lg:text-6xl font-medium leading-[129%]">
-          {t("title.2.1")}
-        </span>
-        {t("title.2.2")}
-      </h2>
-
-      <p className="sub2-font-nunito-sans  lg:hidden w-full max-w-[345px] mt-4 text-center text-xl leading-[129%]">
-        {t("p1.1.1")}
-        <br />
-        <span className="sub2-font-nunito-sans  text-(--font-blue-color) text-center text-xl leading-[129%]">
-          {t("p1.1.2")}
-        </span>
-      </p>
-
-      <p className="sub2-font-nunito-sans  max-lg:hidden w-full max-w-190 mt-5 text-center text-[28px] leading-[129%]">
-        {t("p1.2")}
+      <p className="sub2-font-nunito-sans w-full max-w-85 md:max-w-105 lg:max-w-250 mt-5 text-center md:text-xl lg:text-[28px] leading-[129%]">
+        {t("p1")}
       </p>
 
       <div className="flex flex-col items-center lg:flex-row lg:items-start mt-15 lg:mt-24 mx-auto gap-6 lg:justify-between w-full max-w-[1260px]">

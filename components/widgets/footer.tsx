@@ -61,8 +61,8 @@ export function Footer() {
                 src="/logo/print.svg"
                 alt="print"
                 width={44}
-                height={10}
-                className="mr-[6.93px] mb-[7.45px] w-[40.72px] h-[8.81px]"
+                height={11}
+                className="mr-[6.93px] mb-[7.45px] w-[40.72px] h-[10px]"
               />
             </div>
 

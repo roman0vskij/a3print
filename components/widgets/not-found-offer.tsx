@@ -24,30 +24,25 @@ export function NotFoundOffer() {
             className="w-25 md:w-50 lg:w-[327px]"
           />
           <div className="flex flex-col gap-6 lg:gap-10.5 w-full">
-            <h3 className="font-nunito-sans w-full max-w-175 mx-auto text-center text-3xl md:text-[40px] font-medium leading-[129%] text-(--font-secondary-color) lg:hidden">
-              {t("h3.1")}
-            </h3>
-            <h3 className="font-nunito-sans w-full text-[50px] font-medium leading-[129%] text-(--font-secondary-color) hidden lg:block">
-              {t("h3.2")}
+            <h3 className="mx-auto font-nunito-sans max-lg:text-center w-full max-w-86.5 md:max-w-120 lg:mx-0 lg:max-w-170 text-3xl md:text-[40px] lg:text-[50px] font-medium leading-[129%] text-(--font-secondary-color)">
+              {t("h3")}
             </h3>
 
             <div className="lg:hidden mx-auto max-w-84 md:max-w-110">
               <p className="text-center text-sm md:text-lg font-medium leading-[150%] font-montserrat text-(--font-secondary-color)">
-                {t("p1.1.1")}
-                <br />
-                {t("p1.1.2")}
+                {t("p1")}
               </p>
-              <p className="text-center text-sm md:text-lg font-medium leading-[150%] font-montserrat text-(--font-secondary-color) mt-1.5">
-                {t("p2.1")}
+              <p className="mx-auto max-w-65 md:max-w-85 text-center text-sm md:text-lg font-medium leading-[150%] font-montserrat text-(--font-secondary-color) mt-1.5">
+                {t("p2")}
               </p>
             </div>
 
             <div className="hidden lg:block max-w-[632px]">
               <p className="text-[22px] font-medium leading-[150%] font-montserrat text-(--font-secondary-color)">
-                {t("p1.2")}
+                {t("p1")}
               </p>
               <p className="text-[22px] font-medium leading-[150%] font-montserrat text-(--font-secondary-color) mt-1.5">
-                {t("p2.2")}
+                {t("p2")}
               </p>
             </div>
 

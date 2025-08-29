@@ -10,8 +10,8 @@ function Loader({ visible }: { visible: boolean }) {
       }`}
     >
       <div className="bg-(--primary-color) w-25 lg:w-50 h-31.25 lg:h-62.5 flex flex-col items-end justify-end p-1">
-        <div className="font-bold text-4xl lg:text-[64px]">А3</div>
-        <div className="font-bold text-sm lg:text-2xl">ПРИНТ</div>
+        <div className="text-[#331609] font-bold text-[42px] lg:text-[90px] leading-[100%]">А3</div>
+        <div className="text-[#331609] font-bold lg:text-[34px] leading-[100%]">ПРИНТ</div>
       </div>
       <div className="loader mx-auto mt-10 lg:mt-20" />
     </div>

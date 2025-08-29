@@ -9,9 +9,10 @@ import { routing } from "@/i18n/routing";
 import { SuspenseWithLoader } from "@/components/ui/suspense-with-loader";
 
 export const metadata: Metadata = {
-  title: "A3 ПРИНТ",
+  title:
+    "A3 Принт – Лучшая типография в Алматы | Срочная печать, визитки, баннеры, на одежде",
   description:
-    "Типография полного цикла в Алматы. Печать визиток, баннеров, каталогов и полиграфии в Алматы. Быстро, качественно и недорого. Типография A3 ПРИНТ.",
+    "A3 ПРИНТ - типография полного цикла в Алматы. Печать визиток, баннеров, каталогов и полиграфии в Алматы. Быстро, качественно и недорого. Типография A3 ПРИНТ.",
   keywords: [
     "A3 ПРИНТ",
     "A3ПРИНТ",
@@ -160,6 +161,7 @@ export const metadata: Metadata = {
   },
   other: {
     "format-detection": "telephone=no, email=no",
+    "google-site-verification": "C_9YR10y61Zc3fsLsYdk7NWRwDd0mdbF7pODfvqRwtQ",
   },
 };
 
